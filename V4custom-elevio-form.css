@@ -1,0 +1,47 @@
+div.ant-row.ant-form-item:nth-child(5) {
+    width: 100% !important;
+}
+
+/* File Upload remains unchanged */
+div.ant-row.ant-form-item:nth-child(6) {
+    width: 100% !important;
+}
+
+/* Hide labels (subheadings) */
+div.ant-form-item-label label {
+    display: none !important; /* Hide labels */
+}
+
+/* Placeholder text styles */
+.ant-input::placeholder,
+.ant-input-affix-wrapper input::placeholder,
+textarea::placeholder {
+    color: rgba(0, 0, 0, 0.5) !important; /* Semi-transparent placeholder text */
+    font-style: italic !important;
+}
+
+/* Custom placeholders for each input field */
+div.ant-row.ant-form-item:nth-child(1) .ant-input {
+    placeholder: "Company Name" !important;
+}
+
+div.ant-row.ant-form-item:nth-child(2) .ant-input {
+    placeholder: "First Name" !important;
+}
+
+div.ant-row.ant-form-item:nth-child(3) .ant-input {
+    placeholder: "Last Name" !important;
+}
+
+div.ant-row.ant-form-item:nth-child(4) .ant-input {
+    placeholder: "Email" !important;
+}
+
+div.ant-row.ant-form-item:nth-child(5) textarea {
+    placeholder: "Description" !important;
+}
+
+/* Required fields red left border */
+div.ant-form-item-required .ant-form-item-control-input {
+    border-left: 5px solid #d9534f !important;
+}
