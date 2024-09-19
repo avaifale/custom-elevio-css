@@ -1,0 +1,31 @@
+/* Company Name full width */
+div.ant-row.ant-form-item:nth-child(1) {
+    width: 100% !important;
+}
+
+/* First Name and Last Name side by side */
+div.ant-row.ant-form-item:nth-child(2),
+div.ant-row.ant-form-item:nth-child(3) {
+    display: inline-block !important;
+    width: 48% !important;
+    margin-right: 2% !important;
+}
+
+div.ant-row.ant-form-item:nth-child(3) {
+    margin-right: 0 !important; /* Remove right margin for the last field */
+}
+
+/* Email full width */
+div.ant-row.ant-form-item:nth-child(4) {
+    width: 100% !important;
+}
+
+/* Description full width */
+div.ant-row.ant-form-item:nth-child(5) {
+    width: 100% !important;
+}
+
+/* File Upload full width */
+div.ant-row.ant-form-item:nth-child(6) {
+    width: 100% !important;
+}
