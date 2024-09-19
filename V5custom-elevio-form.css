@@ -1,0 +1,75 @@
+/* Company Name field */
+input#field_1 {
+    width: 100% !important; /* Full-width */
+    font-size: 16px !important;
+    border: 2px solid #d9534f !important; /* Optional: Adds a red border */
+}
+
+/* First Name and Last Name side by side */
+input#field_2, input#field_3 {
+    display: inline-block !important;
+    width: 48% !important; /* Makes them appear side by side */
+    margin-right: 2% !important; /* Space between them */
+}
+
+input#field_3 {
+    margin-right: 0 !important; /* Remove margin from the last field */
+}
+
+/* Email Field */
+input#field_4 {
+    width: 100% !important;
+    font-size: 16px !important;
+}
+
+/* Description Field */
+textarea#field_5 {
+    width: 100% !important;
+    font-size: 16px !important;
+}
+
+/* File Upload (unchanged) */
+input#field_6 {
+    width: 100% !important;
+}
+
+/* Hiding labels */
+.ant-form-item-label label {
+    display: none !important;
+}
+
+/* Adding placeholder text */
+input#field_1::placeholder {
+    color: rgba(0, 0, 0, 0.5) !important;
+    font-style: italic !important;
+    content: "Company Name";
+}
+
+input#field_2::placeholder {
+    color: rgba(0, 0, 0, 0.5) !important;
+    font-style: italic !important;
+    content: "First Name";
+}
+
+input#field_3::placeholder {
+    color: rgba(0, 0, 0, 0.5) !important;
+    font-style: italic !important;
+    content: "Last Name";
+}
+
+input#field_4::placeholder {
+    color: rgba(0, 0, 0, 0.5) !important;
+    font-style: italic !important;
+    content: "Email";
+}
+
+textarea#field_5::placeholder {
+    color: rgba(0, 0, 0, 0.5) !important;
+    font-style: italic !important;
+    content: "Description";
+}
+
+/* Required field red left border */
+.ant-form-item-required .ant-form-item-control-input {
+    border-left: 5px solid #d9534f !important;
+}
