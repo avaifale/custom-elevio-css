@@ -1,0 +1,66 @@
+/* Aligning the Company Name as a single line */
+.ant-form-item:nth-child(1) {
+    width: 100%;
+}
+
+/* First Name and Last Name side by side */
+.ant-form-item:nth-child(2), .ant-form-item:nth-child(3) {
+    display: inline-block;
+    width: 48%; /* Adjust to fit side by side */
+    margin-right: 2%;
+}
+
+.ant-form-item:nth-child(3) {
+    margin-right: 0; /* Remove right margin for the last field */
+}
+
+/* Email as a single line */
+.ant-form-item:nth-child(4) {
+    width: 100%;
+}
+
+/* Description as a single line */
+.ant-form-item:nth-child(5) {
+    width: 100%;
+}
+
+/* File Upload remains unchanged */
+.ant-form-item:nth-child(6) {
+    width: 100%;
+}
+
+/* Hide subheadings and replace with placeholders */
+.ant-form-item-label label {
+    display: none; /* Hides the label */
+}
+
+.ant-input::placeholder, .ant-input-affix-wrapper input::placeholder, textarea::placeholder {
+    color: rgba(0, 0, 0, 0.5); /* Semi-transparent placeholder text */
+    font-style: italic;
+}
+
+/* Custom placeholders for each input field */
+.ant-form-item:nth-child(1) .ant-input {
+    placeholder: "Company Name";
+}
+
+.ant-form-item:nth-child(2) .ant-input {
+    placeholder: "First Name";
+}
+
+.ant-form-item:nth-child(3) .ant-input {
+    placeholder: "Last Name";
+}
+
+.ant-form-item:nth-child(4) .ant-input {
+    placeholder: "Email";
+}
+
+.ant-form-item:nth-child(5) textarea {
+    placeholder: "Description";
+}
+
+/* Styling for required fields (subtle red left border) */
+.ant-form-item-required .ant-form-item-control-input {
+    border-left: 5px solid #d9534f;
+}
